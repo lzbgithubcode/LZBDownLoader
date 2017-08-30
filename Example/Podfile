@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LZBDownLoader_Example' do
+  pod 'LZBDownLoader', :path => '../'
+
+  target 'LZBDownLoader_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
