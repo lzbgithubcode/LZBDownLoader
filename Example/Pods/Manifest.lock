@@ -1,0 +1,16 @@
+PODS:
+  - LZBDownLoader (0.1.0)
+
+DEPENDENCIES:
+  - LZBDownLoader (from `../`)
+
+EXTERNAL SOURCES:
+  LZBDownLoader:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LZBDownLoader: 09eecece376fa4f83fd255bd2c14cfec097b7172
+
+PODFILE CHECKSUM: 397f2ed31d46c1350ea7506a9dd1c1d0d79aef1f
+
+COCOAPODS: 1.2.1

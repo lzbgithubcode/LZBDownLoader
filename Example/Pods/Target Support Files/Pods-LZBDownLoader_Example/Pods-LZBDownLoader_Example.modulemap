@@ -1,0 +1,6 @@
+framework module Pods_LZBDownLoader_Example {
+  umbrella header "Pods-LZBDownLoader_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

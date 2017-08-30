@@ -23,6 +23,10 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8B11FEE57BC9A99F5EF6493F /* Pods_LZBDownLoader_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2547CB1C3675D0742726ECDF /* Pods_LZBDownLoader_Example.framework */; };
+		C8D0E3681F56997D00148C67 /* LZBDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D0E3611F56997D00148C67 /* LZBDownLoader.m */; };
+		C8D0E3691F56997D00148C67 /* LZBDownLoaderManger.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D0E3631F56997D00148C67 /* LZBDownLoaderManger.m */; };
+		C8D0E36A1F56997D00148C67 /* LZBFileManger.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D0E3651F56997D00148C67 /* LZBFileManger.m */; };
+		C8D0E36B1F56997D00148C67 /* NSString+LZBEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D0E3671F56997D00148C67 /* NSString+LZBEncrypt.m */; };
 		DE053028A1E0EFA0741B6853 /* Pods_LZBDownLoader_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F41B6D95B6F694132AB40 /* Pods_LZBDownLoader_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,9 +42,9 @@
 
 /* Begin PBXFileReference section */
 		2547CB1C3675D0742726ECDF /* Pods_LZBDownLoader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZBDownLoader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3373472D5A6D9FAA91B0898F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3373472D5A6D9FAA91B0898F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		493F41B6D95B6F694132AB40 /* Pods_LZBDownLoader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZBDownLoader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B05E96AF123F501FDFE9135 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4B05E96AF123F501FDFE9135 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LZBDownLoader_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZBDownLoader_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,8 +67,16 @@
 		6FDC5EB7CA7B82B53FB1B0C3 /* Pods-LZBDownLoader_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZBDownLoader_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZBDownLoader_Tests/Pods-LZBDownLoader_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B7AAC2AB4AEF0208571DBE21 /* LZBDownLoader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LZBDownLoader.podspec; path = ../LZBDownLoader.podspec; sourceTree = "<group>"; };
+		B7AAC2AB4AEF0208571DBE21 /* LZBDownLoader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LZBDownLoader.podspec; path = ../LZBDownLoader.podspec; sourceTree = "<group>"; };
 		BAF4504FEE0BC624101CC3B1 /* Pods-LZBDownLoader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZBDownLoader_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZBDownLoader_Example/Pods-LZBDownLoader_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C8D0E3601F56997D00148C67 /* LZBDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBDownLoader.h; sourceTree = "<group>"; };
+		C8D0E3611F56997D00148C67 /* LZBDownLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBDownLoader.m; sourceTree = "<group>"; };
+		C8D0E3621F56997D00148C67 /* LZBDownLoaderManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBDownLoaderManger.h; sourceTree = "<group>"; };
+		C8D0E3631F56997D00148C67 /* LZBDownLoaderManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBDownLoaderManger.m; sourceTree = "<group>"; };
+		C8D0E3641F56997D00148C67 /* LZBFileManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBFileManger.h; sourceTree = "<group>"; };
+		C8D0E3651F56997D00148C67 /* LZBFileManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBFileManger.m; sourceTree = "<group>"; };
+		C8D0E3661F56997D00148C67 /* NSString+LZBEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LZBEncrypt.h"; sourceTree = "<group>"; };
+		C8D0E3671F56997D00148C67 /* NSString+LZBEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LZBEncrypt.m"; sourceTree = "<group>"; };
 		DE6552F14A390040ED49B3B3 /* Pods-LZBDownLoader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZBDownLoader_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZBDownLoader_Tests/Pods-LZBDownLoader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F9EBEE02A8509695DD0495EC /* Pods-LZBDownLoader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZBDownLoader_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZBDownLoader_Example/Pods-LZBDownLoader_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +144,7 @@
 		6003F593195388D20070C39A /* Example for LZBDownLoader */ = {
 			isa = PBXGroup;
 			children = (
+				C8D0E35F1F56997D00148C67 /* LZBDownLoader */,
 				6003F59C195388D20070C39A /* LZBAppDelegate.h */,
 				6003F59D195388D20070C39A /* LZBAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -183,6 +196,21 @@
 				3373472D5A6D9FAA91B0898F /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		C8D0E35F1F56997D00148C67 /* LZBDownLoader */ = {
+			isa = PBXGroup;
+			children = (
+				C8D0E3601F56997D00148C67 /* LZBDownLoader.h */,
+				C8D0E3611F56997D00148C67 /* LZBDownLoader.m */,
+				C8D0E3621F56997D00148C67 /* LZBDownLoaderManger.h */,
+				C8D0E3631F56997D00148C67 /* LZBDownLoaderManger.m */,
+				C8D0E3641F56997D00148C67 /* LZBFileManger.h */,
+				C8D0E3651F56997D00148C67 /* LZBFileManger.m */,
+				C8D0E3661F56997D00148C67 /* NSString+LZBEncrypt.h */,
+				C8D0E3671F56997D00148C67 /* NSString+LZBEncrypt.m */,
+			);
+			path = LZBDownLoader;
 			sourceTree = "<group>";
 		};
 		DA098198EB3C2870173F9357 /* Pods */ = {
@@ -394,7 +422,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D0E36A1F56997D00148C67 /* LZBFileManger.m in Sources */,
+				C8D0E3691F56997D00148C67 /* LZBDownLoaderManger.m in Sources */,
 				6003F59E195388D20070C39A /* LZBAppDelegate.m in Sources */,
+				C8D0E36B1F56997D00148C67 /* NSString+LZBEncrypt.m in Sources */,
+				C8D0E3681F56997D00148C67 /* LZBDownLoader.m in Sources */,
 				6003F5A7195388D20070C39A /* LZBViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

@@ -1,0 +1,6 @@
+framework module LZBDownLoader {
+  umbrella header "LZBDownLoader-umbrella.h"
+
+  export *
+  module * { export * }
+}
